@@ -44,6 +44,12 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-.hi2{
-  background-color: red;
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
 }
