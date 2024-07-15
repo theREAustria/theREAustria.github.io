@@ -18,6 +18,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif; /* Use Nunito font */
 }
 /*
   5. Improve media defaults
@@ -44,6 +45,105 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-.hi2{
-  background-color: red;
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: transparent;
+  position: relative; /* Added to keep the header in the flow of the document */
+  z-index: 1; /* Ensures the header is above other elements */
+}
+
+.nav-child {
+  margin-left: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0px 0px 40px;
+  position: relative;
+}
+
+.text-container {
+  width: 50%;
+  text-align: left;
+  padding: 40px 40px 40px 60px;
+}
+
+.text-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-container h3, .text-container p {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-projects, .btn-linkedin {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+.btn-projects {
+  background-color: #FFD700;
+  border: none;
+  color: black;
+}
+
+.btn-linkedin {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.image-container {
+  width: 50%;
+  position: relative;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  margin-top: -150px; /* Move the image upwards by 150px */
+  border-radius: 10px;
+}
+
+#role {
+  color: #FDC435;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#name {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #828282;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
