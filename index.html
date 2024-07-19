@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renz Edwin Austria</title>
+    <link rel="stylesheet" href="/assets/styles/index.style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    
     <header>
-        <a href="#">Renz Edwin Austria</a>
+        <a href="/index.html" id="logo">Renz Edwin Austria</a>
         <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
-        </nav>
+            <a class="nav-child" href="/about.html">About</a>
+            <a class="nav-child" href="/project.html">Projects</a>
+            <a class="nav-child" href="/contact.html">Contacts</a>
+        </nav> 
     </header>
+    <div class="content-container">
+        <div class="text-container">
+            <h3 id="role">WEB DEVELOPER</h3>
+            <h1 id="name">Hello, my name is Renz Edwin V. Austria</h1>
+            <p>I graduated with a Bachelor of Science in Computer Science from Cavite State University Don Severino Delas Alas Campus, located in Indang, Cavite.</p>
+            <div class="button-container">
+                <button id="projects-button" class="btn-projects">Projects</button>
+                <a href="https://www.linkedin.com/in/renz-edwin-austria-4b7a55243/" class="btn-linkedin" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="profile" src="/assets/images/profile.png" alt="Profile sample">
+        </div>
+    </div>
+    <div class="projects-container">
+        <h1 id="section">Projects</h1>
+        <div class="card-list">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">VisualLingo</h2>
+                    <p class="card-description"> A Google Meet Extension that allowed user to translate Filipino Sign Language into audible output</p>
+                    <a href="https://visuallingo.webflow.io/" class="card-button" target="_blank">View Project</a>
+                </div>
+                <div class="card-image">
+                    <img src="/assets/images/Visuallingo.png" alt="Project Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <div class="instagram">
+            <span class="ri--instagram-fill"></span>
+            <a href="https://www.instagram.com/thereaustria/"><img src="/assets/images/insta.png" alt="Instagram"></a>
+        </div>
+        <div class="linkedin">
+            <span class="uiw--linkedin"></span>
+            <a href="https://www.linkedin.com/in/renz-edwin-austria/"><img src="/assets/images/linked.png" alt="LinkedIn"></a>
+        </div>
+        <div class="email">
+            <span class="uiw--mail"></span>
+            <a href="mailto:"><img src="/assets/images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <p class="credit">Renz Edwin Austria 2024</p>
+    <script>
+        document.getElementById('projects-button').addEventListener('click', function() {
+            window.location.href = 'https://visuallingo.webflow.io/';
+        });
+    </script>
 </body>
 </html>
