@@ -14,7 +14,7 @@
         <a href="/index.html" id="logo">Renz Edwin Austria</a>
         <nav>
             <a class="nav-child" href="/about.html">About</a>
-            <a class="nav-child" href="/project.html">Projects</a>
+            <a class="nav-child" href="#projects-section">Projects</a>
             <a class="nav-child" href="/contact.html">Contacts</a>
         </nav> 
     </header>
@@ -32,13 +32,13 @@
             <img class="profile" src="/assets/images/profile.png" alt="Profile sample">
         </div>
     </div>
-    <div class="projects-container">
+    <div id="projects-section" class="projects-container">
         <h1 id="section">Projects</h1>
         <div class="card-list">
             <div class="card">
                 <div class="card-content">
                     <h2 class="card-title">VisualLingo</h2>
-                    <p class="card-description"> A Google Meet Extension that allowed user to translate Filipino Sign Language into audible output</p>
+                    <p class="card-description">A Google Meet Extension designed to enhance accessibility by translating Filipino Sign Language (FSL) into audible output allows users to engage and communicate with mute individuals.</p>
                     <a href="https://visuallingo.webflow.io/" class="card-button" target="_blank">View Project</a>
                 </div>
                 <div class="card-image">
@@ -65,6 +65,17 @@
     <script>
         document.getElementById('projects-button').addEventListener('click', function() {
             window.location.href = 'https://visuallingo.webflow.io/';
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
