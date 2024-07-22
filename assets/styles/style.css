@@ -18,6 +18,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif; /* Use Nunito font */
 }
 /*
   5. Improve media defaults
