@@ -13,17 +13,19 @@
         <a href="/index.html" id="logo">Renz Edwin Austria</a>
         <nav>
             <a class="nav-child active" id="about-link" href="/about.html">About</a>
-            <a class="nav-child" id="projects-link" href="/project.html">Projects</a>
-            <a class="nav-child" id="contacts-link" href="/contacts">Contacts</a>
+            <a class="nav-child" href="/#projects-section">Projects</a>
+            <a class="nav-child" href="/#contacts-section">Contacts</a>
         </nav>
     </header>
     <div class="content-container">
         <div class="text-container">
             <h1 id="role">About me</h1>
             <p>Hello! My Name is Renz Edwin Austria, I graduated with a Bachelor of Science in Computer Science from Cavite State University Don Severino Delas Alas Campus, located in Indang, Cavite.</p>
-            <a href="https://www.canva.com/design/DAFjF_L2Cok/PfN3wSG0wQoShOF2JfYeAw/view?utm_content=DAFjF_L2Cok&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                <button id="resume-btn">Resume</button>
-            </a>
+            <div class="button-container">
+                <a href="https://www.canva.com/design/DAFjF_L2Cok/PfN3wSG0wQoShOF2JfYeAw/view?utm_content=DAFjF_L2Cok&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+                    <button id="resume-btn">Resume</button>
+                </a>
+            </div>
         </div>
         <div class="image-container">
             <img class="profile" src="/assets/images/About-Me.png" alt="Profile sample">
@@ -41,26 +43,8 @@
         </div>
     </div>
     <footer>
-        <p>Renz Edwin Austria 2023</p>
+        Renz Edwin Austria 2024
     </footer>
-    <script>
-        function setActiveLink() {
-            const links = document.querySelectorAll('.nav-child');
-            links.forEach(link => {
-                link.classList.remove('active');
-                if (link.href === window.location.href) {
-                    link.classList.add('active');
-                }
-            });
-        }
-        window.onload = setActiveLink;
-        const navLinks = document.querySelectorAll('.nav-child');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(navLink => navLink.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 </html>

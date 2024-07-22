@@ -6,7 +6,8 @@
     <title>Renz Edwin Austria</title>
     <link rel="stylesheet" href="/assets/styles/index.style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"> -->
+    
 </head>
 <body>
     
@@ -15,7 +16,7 @@
         <nav>
             <a class="nav-child" href="/about.html">About</a>
             <a class="nav-child" href="#projects-section">Projects</a>
-            <a class="nav-child" href="/contact.html">Contacts</a>
+            <a class="nav-child" href="#contacts-section">Contacts</a>
         </nav> 
     </header>
     <div class="content-container">
@@ -47,37 +48,27 @@
             </div>
         </div>
     </div>
-    <div class="social-icons">
+    <div id="contacts-section" class="social-icons">
         <div class="instagram">
-            <span class="ri--instagram-fill"></span>
+            <!-- <span class="ri--instagram-fill"></span> -->
             <a href="https://www.instagram.com/thereaustria/"><img src="/assets/images/insta.png" alt="Instagram"></a>
         </div>
         <div class="linkedin">
-            <span class="uiw--linkedin"></span>
+            <!-- <span class="uiw--linkedin"></span> -->
             <a href="https://www.linkedin.com/in/renz-edwin-austria/"><img src="/assets/images/linked.png" alt="LinkedIn"></a>
         </div>
         <div class="email">
-            <span class="uiw--mail"></span>
+            <!-- <span class="uiw--mail"></span> -->
             <a href="mailto:"><img src="/assets/images/email.png" alt="Email"></a>
         </div>
     </div>
-    <p class="credit">Renz Edwin Austria 2024</p>
-    <script>
-        document.getElementById('projects-button').addEventListener('click', function() {
-            window.location.href = 'https://visuallingo.webflow.io/';
-        });
-
-        // Smooth scrolling for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <footer>Renz Edwin Austria 2024</footer> 
+   
+    
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Scroll to top">
+        <img src="/assets/images/arrow-up-wide-line.png" alt="Scroll to top">
+    </button>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 </html>
 

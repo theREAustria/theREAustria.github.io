@@ -60,35 +60,51 @@ header {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
-    padding: 60px 40px;
-    align-items: center;
-}
+    flex-direction: row;
+    padding: 60px 0px 0px 40px;
+    position: relative;
+  }
 
 .text-container {
-    max-width: 45%;
-}
+    width: 50%;
+    text-align: left;
+    padding: 40px 40px 40px 60px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+    padding-left: 24px;
+  }
 
 #role {
+    font-size: 48px;
+    font-weight: 700;
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
+    color: #25282B;
+    line-height: 72px;
+    padding-left: 24px;
+  }
 
-p {
-    margin-bottom: 20px;
-    font-family: 'Nunito', sans-serif;
-}
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #828282;
+    line-height: 36px;
+    padding: 24px;
+  }
 
 #resume-btn {
     background-color: #FFD700;
-    border: none;
+    border: none;  
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     margin-bottom: 20px;
+    border-radius: 8px;
+    color: black;
 }
 
 .social-icons {
@@ -112,10 +128,13 @@ p {
 }
 
 .image-container {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 524px;
+    height: 524px; */
+    padding: 40px 40px 40px 60px;
 }
 
 .profile {
